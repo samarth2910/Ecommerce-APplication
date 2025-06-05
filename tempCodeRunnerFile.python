@@ -1,0 +1,24 @@
+#This is a class
+class Animal: 
+    def __init__(self,name,action):   #This is a constructor basically the input it will take ie the attributes
+        self.name= name
+        self.action=action  #Attributes of the Animal
+    def sound(self): #These are the method that will define the actions it will perform
+        print(f"The {self.name} performs {self.action}")
+    def __str__(self): #used to show result when we print the object 
+        return self.name
+    
+class Snake(Animal): ##This is a example of inheritance
+    def hiss(self):
+        print(f"The {self.name} performs Hiss")
+    
+        
+dog=Animal("Dog","Barks")##This is a object being created
+
+Cat=Animal("Cat","Meows")
+dog.sound()
+Cat.sound()
+print(Cat)
+print(dog)
+Cobra=Snake("Cobra","Hiss")
+Cobra.hiss()
