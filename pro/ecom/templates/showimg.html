@@ -27,14 +27,14 @@
             name
         </th>
         <th>
-            email
+            Image
         </th>
         </tr>
         {% for i in Dataimg %}
         <tr>
         <td>{{i.id}}</td>
         <td>{{i.name}}</td>
-        <td>{{i.img}}</td>
+        <td><img src="{{i.img.url}}" alt=""></td>
         </tr>
         {% endfor %}
        

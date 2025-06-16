@@ -1,18 +1,26 @@
-from django.shortcuts import render , HttpResponse 
-from .models import Student
 
-# Create your views here.
+from django.shortcuts import render
+from django.http import HttpResponse
+from .models import Student,Img
+
 def first(request):
-    return HttpResponse("this is my first view")
-
+    return HttpResponse("Hello"
+                        )
 def demo(request):
     return render(request,"demo.html")
 
 def style(request):
-    return render(request,'style.html')
+    return render(request,"style.html")
 
 def show(request):
-    data=Student.objects.all()
-    for i in data:
-        print(i.name)
-    return render(request,"show.html",{"Student":data})
+    Data=Student.objects.all()
+    return render(request,"show.html",{"Student":Data})
+
+def showimg(request):
+    Dataimg=Img.objects.all()
+    return render(request,"showimg.html",{"Dataimg":Dataimg})
+
+def store(request):
+    if request.method=="POST":
+        store_data=
+    return render(request,"store.html")
