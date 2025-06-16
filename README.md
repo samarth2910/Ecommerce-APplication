@@ -1,4 +1,3 @@
- Ecommerce-APplication
  🛒 E-Commerce App (Django Learning Project) – 🚧 In Progress
 
 This is a learning project I'm building with Django to understand web development fundamentals. So far, I’ve implemented:
